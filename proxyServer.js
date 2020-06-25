@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 5001;
 
 //Middleware
 app.use(express.static('public'));
@@ -12,6 +13,6 @@ app.all('*', (req, res) => {
     res.send('hello world');
 });
 
-app.listen(5001, () => {
-    console.log('Proxy listening on port 5001');
+app.listen(port, () => {
+    console.log(`Proxy listening on port ${port}`);
 });
