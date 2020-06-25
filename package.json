@@ -1,0 +1,26 @@
+{
+  "name": "searchbarricardo-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./proxyServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richigro/searchBarRicardo-proxy.git"
+  },
+  "author": "Ricardo Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richigro/searchBarRicardo-proxy/issues"
+  },
+  "homepage": "https://github.com/richigro/searchBarRicardo-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "http-proxy": "^1.18.1",
+    "nodemon": "^2.0.4"
+  }
+}
