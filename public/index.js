@@ -1,1 +1,4 @@
-console.log("index.js on proxy public file connected");
+// $(".search-bar").on('submit', 'body', (event) => {
+//    event.preventDefault();
+//    const 
+// });
