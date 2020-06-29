@@ -9,22 +9,25 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 const ricardoBasePath = 'http://searchbarricardo2-dev.us-east-2.elasticbeanstalk.com';
+const chrisBasePath = 'http://imagecomponent-env-1.eba-4mfwjdhg.us-east-2.elasticbeanstalk.com';
+const joshBasePath = '';
+const benBasePath = 'http://111111-env.eba-9uquamkj.us-east-2.elasticbeanstalk.com';
 
 //Handle all request
 app.all('*', (req, res) => {
     let currentQuery = req.params[0];
     console.log('params',req.params[0]);
-    if(currentQuery.includes('products')){
-       console.log(currentQuery, "ricardo");
-       Axios.get(`${ricardoBasePath}/api/get/products`)
-       .then((products) => {
-           console.log(products);
-           res.send(products);
-       })
-       .catch((err) => {
-           console.log("Oopss something went wrong");
-       });
-    }
+    // if(currentQuery.includes('products')){
+    //    console.log(currentQuery, "ricardo");
+    //    Axios.get(`${ricardoBasePath}/api/get/products`)
+    //    .then((products) => {
+    //        console.log(products);
+    //        res.send(products);
+    //    })
+    //    .catch((err) => {
+    //        console.log("Oopss something went wrong");
+    //    });
+    // }
     res.send('hello world');
 });
 
