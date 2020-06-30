@@ -1,1 +1,0 @@
-console.log("index.js on proxy public file connected");
